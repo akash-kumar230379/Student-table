@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+hr{
+    border: 3px solid black;
+    width: 190px;
+}
+
+h1{
+    color: rgb(0, 26, 255);
+}
+#container{
+    width: 75%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(189, 209, 202);
+    padding: 0 34px;
+
+}
+#title-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#title-box h1{
+  margin-bottom: 0;
+}
+#add-btn{
+    border: none;
+    background: rgb(255, 51, 0);
+    color: white;
+    border-radius: 6px;
+    padding: 16px 24px;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+#add-btn:hover{
+    background: green;
+    border-radius:12px ;
+}
+#student-table{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#delete-btn , #edit-btn{
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+#delete-btn:hover{
+    background-color: rgb(0, 26, 255);
+}
+#edit-btn:hover{
+    background: rgba(255, 4, 4, 0.39);
+}
+
+#delete-btn{
+  background: red;
+  color: white;
+}
+#edit-btn{
+    background-color: blue;
+    color: white;
+}
+#student-table{
+    border-collapse: collapse;
+}
+#student-table td{
+    text-align: center;
+    padding: 16px 0;
+    text-transform:capitalize ;
+    
+}
+#student-table th{
+    border-top: 1px solid #f7d2f2;
+    padding: 10px 0;
+}
+
+#student-table tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+#student-form, #edit-student-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid blue;
+    margin-top: 4px;
+   
+}
+#submit-btn{
+    border: none;
+    padding: 13px 27px;
+    background: blueviolet;
+    font-size: 18px;
+    color: white;
+    width: fit-content;
+}
+#save-btn{
+    background-color: rgb(214, 14, 14);
+    border: none;
+    padding: 13px 27px;
+   font-size: 18px;
+    color: white;
+    width: fit-content;
+}
+
+@media (max-width:503px){
+    #student-table tr{
+        width: 100%;
+        font-size: 13px;
+    }
+    h1{
+        color: red;
+    }
+    #add-btn{
+        background-color: blue;
+        width: 60%;
+    }
+    #add-btn:hover{
+        border-radius: 12px;
+    }
+}
